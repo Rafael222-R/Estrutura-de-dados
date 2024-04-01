@@ -1,2 +1,2 @@
-let dados = ('Insera 3 Numeros inteiros : ');
 
+//dados.reverse()
