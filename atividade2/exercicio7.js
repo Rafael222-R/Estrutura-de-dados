@@ -21,7 +21,7 @@ if (isNaN(linhas) || isNaN(colunas) || linhas <= 0 || colunas <= 0) {
         }
     }
 
-    // Exibe a matriz
+    
     console.log("Matriz:");
 
     for (let i = 0; i < linhas; i++) {

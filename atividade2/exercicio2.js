@@ -1,16 +1,30 @@
 
-    const numbers =  [1, 38 ,5];
+    const prompt = require("prompt-sync")();
 
-    function compare (a,b) {
-        if (a < b) {
-            return -1;
-        }
-        if (a > b) {
-            return 1;
-        }
-        return 0;
+
+let numeros = [7, 2, 5];
+
+
+let numerosOrdenados = (function(array) {
+    
+    if (array[0] > array[1]) {
+        let temp = array[0];
+        array[0] = array[1];
+        array[1] = temp;
     }
     
-    numbers.sort(compare);
+    if (array[1] > array[2]) {
+        let temp = array[1];
+        array[1] = array[2];
+        array[2] = temp;
+    }
+    if (array[0] > array[1]) {
+        let temp = array[0];
+        array[0] = array[1];
+        array[1] = temp;
+    }
+  
+    return array;
+})(numeros);
 
-    console.log('Em ordem Crescente : ' + numbers.join(', '))
+console.log("Números em ordem crescente:", numerosOrdenados);

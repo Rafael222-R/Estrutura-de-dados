@@ -1,2 +1,1 @@
-
-//dados.reverse()
+isNaN
